@@ -17,6 +17,8 @@
 		BD667AE925A3055D001B0BA3 /* layoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD667AE825A3055D001B0BA3 /* layoutUITests.swift */; };
 		BD667AFA25A33185001B0BA3 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD667AF925A33185001B0BA3 /* CustomButton.swift */; };
 		BD667AFF25A334E9001B0BA3 /* CustomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD667AFE25A334E9001B0BA3 /* CustomStackView.swift */; };
+		BD78F9AA25A3622D009D0C04 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD78F9A925A3622D009D0C04 /* SignUpViewController.swift */; };
+		BD78F9BD25A3684B009D0C04 /* InputStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD78F9BC25A3684B009D0C04 /* InputStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		BD667AEA25A3055D001B0BA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD667AF925A33185001B0BA3 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		BD667AFE25A334E9001B0BA3 /* CustomStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStackView.swift; sourceTree = "<group>"; };
+		BD78F9A925A3622D009D0C04 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BD78F9BC25A3684B009D0C04 /* InputStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 		BD667B0325A33583001B0BA3 /* module */ = {
 			isa = PBXGroup;
 			children = (
+				BD78F9A825A3620A009D0C04 /* signup */,
 				BD667B0425A3359B001B0BA3 /* signin */,
 			);
 			path = module;
@@ -154,6 +159,23 @@
 			children = (
 				BD667AF925A33185001B0BA3 /* CustomButton.swift */,
 				BD667AFE25A334E9001B0BA3 /* CustomStackView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		BD78F9A825A3620A009D0C04 /* signup */ = {
+			isa = PBXGroup;
+			children = (
+				BD78F9AE25A365B2009D0C04 /* views */,
+				BD78F9A925A3622D009D0C04 /* SignUpViewController.swift */,
+			);
+			path = signup;
+			sourceTree = "<group>";
+		};
+		BD78F9AE25A365B2009D0C04 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				BD78F9BC25A3684B009D0C04 /* InputStackView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -288,6 +310,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD78F9BD25A3684B009D0C04 /* InputStackView.swift in Sources */,
+				BD78F9AA25A3622D009D0C04 /* SignUpViewController.swift in Sources */,
 				BD667AFF25A334E9001B0BA3 /* CustomStackView.swift in Sources */,
 				BD667AFA25A33185001B0BA3 /* CustomButton.swift in Sources */,
 				BD667ACB25A3055D001B0BA3 /* ViewController.swift in Sources */,

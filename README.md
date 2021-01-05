@@ -11,3 +11,14 @@ UI를 구성할 때, storyboard를 사용하면 편하고 시각적으로 확인
 2. .isActive = true
 3. NSLayoutconstraint.activate()
 ```
+
+## 2. UITextField UnderLine
+
+Code로 작성 시, Textfield 크기 렌더링이 늦게 된다는 것을 확인하였습니다. 때문에 해당 constraint를 비교하여 넓이를 구해 제작하였습니다.
+
+```
+bottomLine = CALayer()
+bottomLine.frame = CGRectMake(0.0, view.frame.height - 1, view.frame.width, 1.0)
+borderStyle = .none
+layer.addSublayer(bottomLine)
+```
