@@ -12,6 +12,7 @@ final class BasicDataSources: RxCollectionViewSectionedReloadDataSource<DataSect
         super.init(configureCell: { _, collectionView, indexPath, item in
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as? CollectionViewCell
             else { return UICollectionViewCell() }
+            cell.configure(with: item)
             return cell
         })
     }

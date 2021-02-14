@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1907BD5A2E0852B07CDE1504 /* Pods_collectionViewStudy_collectionViewStudyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957AAB63F0BBA94DAB2B2186 /* Pods_collectionViewStudy_collectionViewStudyUITests.framework */; };
+		291F808225D9541300FE1843 /* Rx+Dispose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291F808125D9541300FE1843 /* Rx+Dispose.swift */; };
 		5F6F5534D929B8A062DA9B79 /* Pods_collectionViewStudyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 782CC584B70508BD8C2F5938 /* Pods_collectionViewStudyTests.framework */; };
 		BD6F309D25D91FB600BD8589 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6F309C25D91FB600BD8589 /* DataSource.swift */; };
 		BD6F30A825D920DA00BD8589 /* BasicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6F30A725D920DA00BD8589 /* BasicData.swift */; };
@@ -46,6 +47,7 @@
 		00C71BF302D23E14D5F8EFEE /* Pods-collectionViewStudy-collectionViewStudyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collectionViewStudy-collectionViewStudyUITests.release.xcconfig"; path = "Target Support Files/Pods-collectionViewStudy-collectionViewStudyUITests/Pods-collectionViewStudy-collectionViewStudyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		18ACA04CDC26C8CA9CEB849B /* Pods-collectionViewStudyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collectionViewStudyTests.release.xcconfig"; path = "Target Support Files/Pods-collectionViewStudyTests/Pods-collectionViewStudyTests.release.xcconfig"; sourceTree = "<group>"; };
 		1D1E8DBDC32AEB3CC44F878A /* Pods-collectionViewStudyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collectionViewStudyTests.debug.xcconfig"; path = "Target Support Files/Pods-collectionViewStudyTests/Pods-collectionViewStudyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		291F808125D9541300FE1843 /* Rx+Dispose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx+Dispose.swift"; sourceTree = "<group>"; };
 		34313A284C0A85AF4ACE3BF0 /* Pods-collectionViewStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collectionViewStudy.release.xcconfig"; path = "Target Support Files/Pods-collectionViewStudy/Pods-collectionViewStudy.release.xcconfig"; sourceTree = "<group>"; };
 		782CC584B70508BD8C2F5938 /* Pods_collectionViewStudyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_collectionViewStudyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85B949D4BEFA83C389E2DD31 /* Pods-collectionViewStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collectionViewStudy.debug.xcconfig"; path = "Target Support Files/Pods-collectionViewStudy/Pods-collectionViewStudy.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		291F808025D953F800FE1843 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				291F808125D9541300FE1843 /* Rx+Dispose.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		3F95E9B595CA68BDBDBF017C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +197,7 @@
 				BD6F30BD25D9252200BD8589 /* Common */,
 				BDF6E48C25D7C9010046E224 /* View */,
 				BD6F30A625D920C100BD8589 /* Model */,
+				291F808025D953F800FE1843 /* Extension */,
 				BD6F309C25D91FB600BD8589 /* DataSource.swift */,
 				BDF6E45D25D7C89B0046E224 /* ViewController.swift */,
 				BD6F30B525D9238A00BD8589 /* BasicViewModel.swift */,
@@ -462,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDF6E45E25D7C89B0046E224 /* ViewController.swift in Sources */,
+				291F808225D9541300FE1843 /* Rx+Dispose.swift in Sources */,
 				BDF6E45A25D7C89B0046E224 /* AppDelegate.swift in Sources */,
 				BD6F30A825D920DA00BD8589 /* BasicData.swift in Sources */,
 				BDF6E48E25D7C90F0046E224 /* CollectionViewCell.swift in Sources */,

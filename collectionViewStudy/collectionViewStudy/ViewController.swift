@@ -27,7 +27,9 @@ class ViewController: UIViewController {
         let input = BasicViewModel.Input()
         let output = viewModel.transform(input)
         
-        
+        output.colors
+            .bind(to: self.collectionView.rx.items(dataSource: dataSource))
+            .disposed(by: rx.disposeBag)
     }
 }
 

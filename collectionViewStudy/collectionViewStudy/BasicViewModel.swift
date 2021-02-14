@@ -9,16 +9,15 @@ import RxSwift
 import RxCocoa
 
 final class BasicViewModel: ViewModel, ViewModelType {
-    struct Input {
-    }
+    struct Input { }
     
     struct Output {
-        let colors: Observable<DataSection>
+        let colors: Observable<[DataSection]>
     }
     
-    private let colors = BehaviorRelay<[DataSection]>(value: [DataSection(header: "Colors", items: [])])
+    private let colors = BehaviorRelay<[DataSection]>(value: [DataSection(header: "Colors", items: [BasicData(color: "blue"), BasicData(color: "yellow")])])
     
     func transform(_ input: Input) -> Output {
-        <#code#>
+        return Output(colors: colors.asObservable())
     }
 }

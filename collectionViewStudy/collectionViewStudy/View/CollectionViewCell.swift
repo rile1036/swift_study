@@ -8,5 +8,7 @@
 import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
-    
+    func configure(with item: BasicData) {
+        backgroundColor = UIColor(named: item.color)
+    }
 }
